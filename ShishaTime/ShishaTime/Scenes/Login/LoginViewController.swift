@@ -12,7 +12,8 @@ import UIKit
 class LoginViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
-        self.navigationController?.pushViewController(HomeViewController(), animated: true)
+        let vc = MainTabController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     override func viewDidLoad() {
         print("loaded")

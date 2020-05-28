@@ -11,4 +11,15 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    override func viewDidLoad() {
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
+    
+    @IBAction func buttonTapped(_ sender: Any) {
+        
+        let vc = BarDetailsViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+}

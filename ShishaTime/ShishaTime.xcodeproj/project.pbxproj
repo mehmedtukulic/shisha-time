@@ -17,6 +17,13 @@
 		84C0683E24802393008131FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C0683D24802393008131FE /* Main.storyboard */; };
 		84C0684024802658008131FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0683F24802658008131FE /* HomeViewController.swift */; };
 		84C0684224802682008131FE /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C0684124802682008131FE /* HomeView.xib */; };
+		84C0684924804E38008131FE /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0684824804E38008131FE /* MainTabController.swift */; };
+		84C0684D24805364008131FE /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0684C24805364008131FE /* RewardsViewController.swift */; };
+		84C0684F24805374008131FE /* BarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0684E24805374008131FE /* BarsViewController.swift */; };
+		84C0685124805387008131FE /* RewardsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C0685024805387008131FE /* RewardsView.xib */; };
+		84C068532480539E008131FE /* BarsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C068522480539E008131FE /* BarsView.xib */; };
+		84C0685524805899008131FE /* BarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0685424805899008131FE /* BarDetailsViewController.swift */; };
+		84C06857248058C3008131FE /* BarDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C06856248058C3008131FE /* BarDetailsView.xib */; };
 		9C89C8A4E358BE4260DB87CA /* Pods_ShishaTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E754E8D5B4DF2BC895B126 /* Pods_ShishaTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +43,13 @@
 		84C0683D24802393008131FE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84C0683F24802658008131FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		84C0684124802682008131FE /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		84C0684824804E38008131FE /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		84C0684C24805364008131FE /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
+		84C0684E24805374008131FE /* BarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsViewController.swift; sourceTree = "<group>"; };
+		84C0685024805387008131FE /* RewardsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardsView.xib; sourceTree = "<group>"; };
+		84C068522480539E008131FE /* BarsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarsView.xib; sourceTree = "<group>"; };
+		84C0685424805899008131FE /* BarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarDetailsViewController.swift; sourceTree = "<group>"; };
+		84C06856248058C3008131FE /* BarDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarDetailsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				84C0684324804657008131FE /* Scenes */,
+				84C0684824804E38008131FE /* MainTabController.swift */,
 				84391816247F19E100E098E7 /* AppDelegate.swift */,
 				8439181F247F19E200E098E7 /* Assets.xcassets */,
 				84391824247F19E200E098E7 /* Info.plist */,
@@ -86,6 +101,8 @@
 				84C068442480465F008131FE /* Initial */,
 				84C0684624804699008131FE /* Login */,
 				84C06847248046CA008131FE /* Home */,
+				84C0684A2480531F008131FE /* Rewards */,
+				84C0684B2480532B008131FE /* Bars */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -124,6 +141,26 @@
 				84C0684124802682008131FE /* HomeView.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		84C0684A2480531F008131FE /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				84C0684C24805364008131FE /* RewardsViewController.swift */,
+				84C0685024805387008131FE /* RewardsView.xib */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		84C0684B2480532B008131FE /* Bars */ = {
+			isa = PBXGroup;
+			children = (
+				84C0684E24805374008131FE /* BarsViewController.swift */,
+				84C068522480539E008131FE /* BarsView.xib */,
+				84C0685424805899008131FE /* BarDetailsViewController.swift */,
+				84C06856248058C3008131FE /* BarDetailsView.xib */,
+			);
+			path = Bars;
 			sourceTree = "<group>";
 		};
 		88C1A3F32BE3AEC65FD2A0F2 /* Frameworks */ = {
@@ -203,6 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84391823247F19E200E098E7 /* LaunchScreen.storyboard in Resources */,
+				84C06857248058C3008131FE /* BarDetailsView.xib in Resources */,
+				84C068532480539E008131FE /* BarsView.xib in Resources */,
+				84C0685124805387008131FE /* RewardsView.xib in Resources */,
 				84C0683E24802393008131FE /* Main.storyboard in Resources */,
 				84391820247F19E200E098E7 /* Assets.xcassets in Resources */,
 				8439182D247F1A6600E098E7 /* LoginView.xib in Resources */,
@@ -243,7 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C0684024802658008131FE /* HomeViewController.swift in Sources */,
+				84C0684D24805364008131FE /* RewardsViewController.swift in Sources */,
+				84C0684F24805374008131FE /* BarsViewController.swift in Sources */,
 				8439182B247F1A4500E098E7 /* LoginViewController.swift in Sources */,
+				84C0684924804E38008131FE /* MainTabController.swift in Sources */,
+				84C0685524805899008131FE /* BarDetailsViewController.swift in Sources */,
 				8439181B247F19E100E098E7 /* ViewController.swift in Sources */,
 				84391817247F19E100E098E7 /* AppDelegate.swift in Sources */,
 				84391819247F19E100E098E7 /* SceneDelegate.swift in Sources */,
