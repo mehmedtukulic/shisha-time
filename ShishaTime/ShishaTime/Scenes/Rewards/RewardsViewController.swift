@@ -10,5 +10,8 @@ import Foundation
 import UIKit
 
 class RewardsViewController: UIViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationController?.navigationBar.topItem?.title = "Rewards"
+    }
 }

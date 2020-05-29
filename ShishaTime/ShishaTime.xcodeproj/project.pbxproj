@@ -155,12 +155,20 @@
 		84C0684B2480532B008131FE /* Bars */ = {
 			isa = PBXGroup;
 			children = (
+				84C068582481830F008131FE /* Bar Details */,
 				84C0684E24805374008131FE /* BarsViewController.swift */,
 				84C068522480539E008131FE /* BarsView.xib */,
+			);
+			path = Bars;
+			sourceTree = "<group>";
+		};
+		84C068582481830F008131FE /* Bar Details */ = {
+			isa = PBXGroup;
+			children = (
 				84C0685424805899008131FE /* BarDetailsViewController.swift */,
 				84C06856248058C3008131FE /* BarDetailsView.xib */,
 			);
-			path = Bars;
+			path = "Bar Details";
 			sourceTree = "<group>";
 		};
 		88C1A3F32BE3AEC65FD2A0F2 /* Frameworks */ = {

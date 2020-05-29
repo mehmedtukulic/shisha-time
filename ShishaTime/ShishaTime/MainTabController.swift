@@ -9,10 +9,11 @@
 import Foundation
 import UIKit
 
-class MainTabController: UITabBarController {
+class MainTabController: UITabBarController, UITabBarControllerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabBar()
+        self.delegate = self
     }
     
     
@@ -34,4 +35,16 @@ class MainTabController: UITabBarController {
             item.imageInsets = UIEdgeInsets(top: 4,left: 0,bottom: -4,right: 0)
         }
     }
+    
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+
+    }
+    
+   func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        print("klikno")
+        if let vc = viewController as? UINavigationController {
+            vc.popViewController(animated: true)
+        }
+    }
+    
 }

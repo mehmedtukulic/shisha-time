@@ -12,14 +12,13 @@ import UIKit
 class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
-        
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+       self.navigationController?.navigationBar.topItem?.title = "Home"
     }
     
     @IBAction func buttonTapped(_ sender: Any) {
         
         let vc = BarDetailsViewController()
         self.navigationController?.pushViewController(vc, animated: true)
-        
+    
     }
 }

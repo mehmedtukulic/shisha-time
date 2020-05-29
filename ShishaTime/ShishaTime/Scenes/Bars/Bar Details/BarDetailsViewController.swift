@@ -10,5 +10,7 @@ import Foundation
 import UIKit
 
 class BarDetailsViewController: UIViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
