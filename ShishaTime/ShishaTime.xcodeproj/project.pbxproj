@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8412B2E22484457100EB3250 /* BarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412B2E12484457100EB3250 /* BarCell.swift */; };
+		8412B2E4248445AD00EB3250 /* BarCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8412B2E3248445AD00EB3250 /* BarCellView.xib */; };
 		84391817247F19E100E098E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84391816247F19E100E098E7 /* AppDelegate.swift */; };
 		84391819247F19E100E098E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84391818247F19E100E098E7 /* SceneDelegate.swift */; };
 		8439181B247F19E100E098E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439181A247F19E100E098E7 /* ViewController.swift */; };
@@ -31,6 +33,8 @@
 		16E754E8D5B4DF2BC895B126 /* Pods_ShishaTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShishaTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F8E208F53C97F7CF36DF86 /* Pods-ShishaTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShishaTime.debug.xcconfig"; path = "Target Support Files/Pods-ShishaTime/Pods-ShishaTime.debug.xcconfig"; sourceTree = "<group>"; };
 		6C5D21D3374127D0D13ED80B /* Pods-ShishaTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShishaTime.release.xcconfig"; path = "Target Support Files/Pods-ShishaTime/Pods-ShishaTime.release.xcconfig"; sourceTree = "<group>"; };
+		8412B2E12484457100EB3250 /* BarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCell.swift; sourceTree = "<group>"; };
+		8412B2E3248445AD00EB3250 /* BarCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarCellView.xib; sourceTree = "<group>"; };
 		84391813247F19E100E098E7 /* ShishaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShishaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84391816247F19E100E098E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84391818247F19E100E098E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8412B2E02484455700EB3250 /* Bar Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8412B2E12484457100EB3250 /* BarCell.swift */,
+				8412B2E3248445AD00EB3250 /* BarCellView.xib */,
+			);
+			path = "Bar Cell";
+			sourceTree = "<group>";
+		};
 		8439180A247F19E100E098E7 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +168,7 @@
 		84C0684B2480532B008131FE /* Bars */ = {
 			isa = PBXGroup;
 			children = (
+				8412B2E02484455700EB3250 /* Bar Cell */,
 				84C068582481830F008131FE /* Bar Details */,
 				84C0684E24805374008131FE /* BarsViewController.swift */,
 				84C068522480539E008131FE /* BarsView.xib */,
@@ -199,6 +213,7 @@
 				8439180F247F19E100E098E7 /* Sources */,
 				84391810247F19E100E098E7 /* Frameworks */,
 				84391811247F19E100E098E7 /* Resources */,
+				B01767339F42D1FFEEEE3123 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84391823247F19E200E098E7 /* LaunchScreen.storyboard in Resources */,
+				8412B2E4248445AD00EB3250 /* BarCellView.xib in Resources */,
 				84C06857248058C3008131FE /* BarDetailsView.xib in Resources */,
 				84C068532480539E008131FE /* BarsView.xib in Resources */,
 				84C0685124805387008131FE /* RewardsView.xib in Resources */,
@@ -261,6 +277,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B01767339F42D1FFEEEE3123 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShishaTime/Pods-ShishaTime-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShishaTime/Pods-ShishaTime-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShishaTime/Pods-ShishaTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F32690E0B911ABB68160A797 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C0684024802658008131FE /* HomeViewController.swift in Sources */,
+				8412B2E22484457100EB3250 /* BarCell.swift in Sources */,
 				84C0684D24805364008131FE /* RewardsViewController.swift in Sources */,
 				84C0684F24805374008131FE /* BarsViewController.swift in Sources */,
 				8439182B247F1A4500E098E7 /* LoginViewController.swift in Sources */,

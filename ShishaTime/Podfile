@@ -6,5 +6,5 @@ target 'ShishaTime' do
   use_frameworks!
 
   # Pods for ShishaTime
-
+  pod 'Alamofire'
 end
