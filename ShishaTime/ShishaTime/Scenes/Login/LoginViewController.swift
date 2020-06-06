@@ -8,14 +8,47 @@
 
 import Foundation
 import UIKit
+import GoogleSignIn
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController , GIDSignInDelegate{
+    
+    @IBOutlet weak var gButton: GIDSignInButton!
+    
+    
+    override func viewDidLoad() {
+
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().delegate = self
+        // Automatically sign in the user.
+       // GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+        
+        
+        
+    }
+    
     
     @IBAction func buttonTapped(_ sender: Any) {
         let vc = MainTabController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    override func viewDidLoad() {
-        print("loaded")
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
+              withError error: Error!) {
+      if let error = error {
+        if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+          print("The user has not signed in before or they have since signed out.")
+        } else {
+          print("\(error.localizedDescription)")
+        }
+        return
+      }
+        
+        GoogleSignInManager().saveUser(user: user)
+        
+        let vc = MainTabController()
+        self.navigationController?.pushViewController(vc, animated: true)
+     
     }
+    
+ 
 }

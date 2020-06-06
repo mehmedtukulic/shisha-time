@@ -8,11 +8,13 @@
 
 import Foundation
 import UIKit
+import GoogleSignIn
 
 class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
        self.navigationController?.navigationBar.topItem?.title = "Home"
+       GIDSignIn.sharedInstance()?.presentingViewController = self
     }
     
     @IBAction func buttonTapped(_ sender: Any) {

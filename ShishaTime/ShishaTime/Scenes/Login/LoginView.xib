@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ShishaTime" customModuleProvider="target">
             <connections>
+                <outlet property="gButton" destination="HLX-t0-TRg" id="Hze-az-jqs"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Rc3-ID-RY3"/>
             </connections>
         </placeholder>
@@ -17,21 +18,31 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1M6-qs-h8K">
-                    <rect key="frame" x="184" y="438" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="VZV-fc-Pxt"/>
-                    </connections>
-                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shishalogo" translatesAutoresizingMaskIntoConstraints="NO" id="06o-Fq-3Cc">
+                    <rect key="frame" x="0.0" y="44" width="414" height="433"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLX-t0-TRg" customClass="GIDSignInButton">
+                    <rect key="frame" x="87" y="477" width="240" height="48"/>
+                    <color key="backgroundColor" red="0.078856669369999993" green="0.73731738329999996" blue="0.92551738019999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="VP6-6i-F7J"/>
+                        <constraint firstAttribute="width" constant="240" id="fwd-kd-l92"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <color key="backgroundColor" red="0.02959783375" green="0.1000853255" blue="0.18040120600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="1M6-qs-h8K" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="YBP-GI-QsU"/>
-                <constraint firstItem="1M6-qs-h8K" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="oEQ-cW-7TU"/>
+                <constraint firstItem="06o-Fq-3Cc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PeB-Bl-jjP"/>
+                <constraint firstItem="HLX-t0-TRg" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="WFR-p6-mPD"/>
+                <constraint firstItem="06o-Fq-3Cc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XLM-aa-9xz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="06o-Fq-3Cc" secondAttribute="trailing" id="v5R-Z4-fus"/>
+                <constraint firstItem="HLX-t0-TRg" firstAttribute="top" secondItem="06o-Fq-3Cc" secondAttribute="bottom" id="z1C-3b-DkR"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="139" y="129"/>
         </view>
     </objects>
+    <resources>
+        <image name="shishalogo" width="577" height="433"/>
+    </resources>
 </document>

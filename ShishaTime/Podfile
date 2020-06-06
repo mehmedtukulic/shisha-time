@@ -7,4 +7,5 @@ target 'ShishaTime' do
 
   # Pods for ShishaTime
   pod 'Alamofire'
+  pod 'GoogleSignIn'
 end
