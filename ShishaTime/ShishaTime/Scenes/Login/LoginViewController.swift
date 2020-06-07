@@ -21,16 +21,10 @@ class LoginViewController: UIViewController , GIDSignInDelegate{
         GIDSignIn.sharedInstance().delegate = self
         // Automatically sign in the user.
        // GIDSignIn.sharedInstance()?.restorePreviousSignIn()
-        
-        
+
         
     }
     
-    
-    @IBAction func buttonTapped(_ sender: Any) {
-        let vc = MainTabController()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
               withError error: Error!) {

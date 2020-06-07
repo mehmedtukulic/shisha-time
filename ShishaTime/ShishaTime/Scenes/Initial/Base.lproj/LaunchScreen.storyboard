@@ -15,16 +15,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shishalaunch" translatesAutoresizingMaskIntoConstraints="NO" id="HiF-Qn-TZx">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHISHA  TIME  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gr-Si-RXc">
+                                <rect key="frame" x="91.5" y="477" width="231" height="40"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="34"/>
+                                <color key="textColor" red="0.078856669369999993" green="0.73731738329999996" blue="0.92551738019999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shishalogo" translatesAutoresizingMaskIntoConstraints="NO" id="yKE-Jb-n2G">
+                                <rect key="frame" x="0.0" y="44" width="414" height="433"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="HiF-Qn-TZx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JXb-j2-ESl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HiF-Qn-TZx" secondAttribute="bottom" id="X6u-fJ-CMs"/>
-                            <constraint firstItem="HiF-Qn-TZx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ags-8v-UVl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HiF-Qn-TZx" secondAttribute="trailing" id="nKR-2H-ypj"/>
+                            <constraint firstItem="yKE-Jb-n2G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3sR-2n-fm4"/>
+                            <constraint firstItem="yKE-Jb-n2G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IT1-VJ-CKk"/>
+                            <constraint firstItem="2Gr-Si-RXc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dt4-FX-Hlj"/>
+                            <constraint firstItem="yKE-Jb-n2G" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ewv-e8-nll"/>
+                            <constraint firstItem="2Gr-Si-RXc" firstAttribute="top" secondItem="yKE-Jb-n2G" secondAttribute="bottom" id="haG-Cc-TFC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -35,6 +42,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="shishalaunch" width="900" height="1273"/>
+        <image name="shishalogo" width="577" height="433"/>
     </resources>
 </document>

@@ -53,7 +53,7 @@ class BarsViewController: UIViewController, UITableViewDelegate, UITableViewData
         //Fetching and Decoding JSON
        // https://jsonplaceholder.typicode.com/users
         
-        AF.request("http://localhost:3001/public/bars").responseJSON { (response) in
+        AF.request("https://shisha-time.herokuapp.com/public/bars").responseJSON { (response) in
             let data = response.data
             let usersdecoder  = JSONDecoder()
             

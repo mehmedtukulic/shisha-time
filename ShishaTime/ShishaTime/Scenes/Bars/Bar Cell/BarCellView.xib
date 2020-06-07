@@ -26,6 +26,14 @@
                                     <constraint firstAttribute="width" constant="40" id="p5Z-QB-c6b"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alJ-gA-PTH">
+                                <rect key="frame" x="47" y="23" width="8" height="8"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="3av-PB-WsI"/>
+                                    <constraint firstAttribute="width" constant="8" id="Rmm-HZ-6u6"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="NQK-ab-8e6">
                                 <rect key="frame" x="70" y="19" width="37.5" height="32.5"/>
                                 <subviews>
@@ -49,9 +57,11 @@
                             <constraint firstItem="NQK-ab-8e6" firstAttribute="leading" secondItem="wSR-BK-HTp" secondAttribute="trailing" constant="15" id="Cup-5Q-oSQ"/>
                             <constraint firstItem="NQK-ab-8e6" firstAttribute="centerY" secondItem="kzQ-i5-QLo" secondAttribute="centerY" id="EEt-h7-EqD"/>
                             <constraint firstItem="wSR-BK-HTp" firstAttribute="leading" secondItem="kzQ-i5-QLo" secondAttribute="leading" constant="15" id="Mcp-dD-7Hg"/>
+                            <constraint firstItem="alJ-gA-PTH" firstAttribute="trailing" secondItem="wSR-BK-HTp" secondAttribute="trailing" id="UW3-vv-sL7"/>
                             <constraint firstAttribute="bottom" secondItem="wSR-BK-HTp" secondAttribute="bottom" constant="15" id="hAm-po-ht9"/>
                             <constraint firstItem="wSR-BK-HTp" firstAttribute="top" secondItem="kzQ-i5-QLo" secondAttribute="top" constant="15" id="tz1-Pa-Dt2"/>
                             <constraint firstItem="NQK-ab-8e6" firstAttribute="height" secondItem="wSR-BK-HTp" secondAttribute="height" multiplier="0.8125" id="wGI-bo-EI0"/>
+                            <constraint firstItem="wSR-BK-HTp" firstAttribute="top" secondItem="alJ-gA-PTH" secondAttribute="bottom" constant="-16" id="yh9-UJ-Aq0"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -73,6 +83,7 @@
             <connections>
                 <outlet property="barImage" destination="wSR-BK-HTp" id="SsP-yL-qP6"/>
                 <outlet property="barLocation" destination="35r-qM-Nsd" id="y78-Ya-xvy"/>
+                <outlet property="barOpenStatus" destination="alJ-gA-PTH" id="S12-Ym-jp3"/>
                 <outlet property="barTitle" destination="p1K-YA-Lhz" id="BYx-VP-wgI"/>
             </connections>
             <point key="canvasLocation" x="136.23188405797103" y="141.29464285714286"/>
