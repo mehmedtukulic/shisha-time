@@ -18,7 +18,7 @@ class BarCell: UITableViewCell {
     @IBOutlet weak var barOpenStatus: UIView!
    // @IBOutlet weak var containerView: UIView!
     
-    func setup(bar: User){
+    func setup(bar: Bar){
         barImage.image = UIImage(named: "twitter")
         barTitle.text = bar.name
         barLocation.text = bar.location

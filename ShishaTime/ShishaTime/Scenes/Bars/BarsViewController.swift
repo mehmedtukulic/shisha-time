@@ -10,20 +10,10 @@ import Foundation
 import UIKit
 import Alamofire
 
-//MODEL
-struct User : Decodable{
-    var id : Int?
-    var name : String?
-    var location : String?
-  //  var email : String?
-   // var phone : String?
-   // var website : String?
-    
-}
 
 class BarsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var Users = [User]()
+    var Bars = [Bar]()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -58,7 +48,7 @@ class BarsViewController: UIViewController, UITableViewDelegate, UITableViewData
             let usersdecoder  = JSONDecoder()
             
             do {
-                self.Users = try usersdecoder.decode([User].self, from : data!)
+                self.Bars = try usersdecoder.decode([Bar].self, from : data!)
                 self.tableView?.reloadData()
                 
             } catch {
@@ -75,7 +65,7 @@ class BarsViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Users.count
+        return Bars.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -87,8 +77,8 @@ class BarsViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "BarCell", for: indexPath)
         let mycell = cell as! BarCell
         
-        if Users.count > 0 {
-            let bar = Users[indexPath.row]
+        if Bars.count > 0 {
+            let bar = Bars[indexPath.row]
             mycell.setup(bar: bar)
             return mycell
             
@@ -97,9 +87,9 @@ class BarsViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: false)
         
         let secondVC = BarDetailsViewController()
+        secondVC.setup(bar: Bars[indexPath.row])
         self.navigationController?.pushViewController(secondVC, animated: true)
     }
     

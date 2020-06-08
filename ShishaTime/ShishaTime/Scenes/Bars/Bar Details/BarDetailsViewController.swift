@@ -12,11 +12,15 @@ import UIKit
 class BarDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
+    @IBOutlet weak var barName: UILabel!
     @IBOutlet weak var panoramaImageView: UIImageView!
     @IBOutlet weak var barLogo: UIImageView!
     @IBOutlet weak var barOpenStatus: UIView!
     @IBOutlet weak var tableView: UITableView!
-
+    @IBOutlet weak var address: UILabel!
+    
+    private var bar: Bar?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +28,11 @@ class BarDetailsViewController: UIViewController, UITableViewDelegate, UITableVi
         setupLabels()
         setupTableView()
     }
+    
+    func setup(bar: Bar) {
+        self.bar = bar
+        
+        }
     
     func setupTableView(){
         
@@ -37,6 +46,10 @@ class BarDetailsViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func setupLabels(){
+        
+        self.barName.text = bar?.name
+        self.address.text = bar?.location
+
         
         barLogo.layer.cornerRadius = barLogo.frame.size.width / 2
         barLogo.clipsToBounds = true
@@ -59,7 +72,7 @@ class BarDetailsViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BarInformationCell", for: indexPath)
         let mycell = cell as! BarInformationCell
-               
+        mycell.setup(bar: self.bar!, row: indexPath.row)
         return mycell
     }
     

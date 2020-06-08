@@ -9,7 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BarDetailsViewController" customModule="ShishaTime" customModuleProvider="target">
             <connections>
+                <outlet property="address" destination="1Zj-Y1-SLe" id="r2v-1z-vZW"/>
                 <outlet property="barLogo" destination="eVJ-cn-d1a" id="8Xp-Yx-aJE"/>
+                <outlet property="barName" destination="uy8-gu-fVA" id="lRI-u0-5F2"/>
                 <outlet property="barOpenStatus" destination="Hby-FD-nAV" id="RAo-sR-mFE"/>
                 <outlet property="panoramaImageView" destination="UaH-ph-NON" id="q8h-eZ-7Lm"/>
                 <outlet property="tableView" destination="OhY-Tr-AU9" id="cju-LX-c01"/>
@@ -131,6 +133,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address link" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zj-Y1-SLe">
                                             <rect key="frame" x="24" y="138" width="386" height="17"/>
                                             <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="15"/>
+                                            <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>

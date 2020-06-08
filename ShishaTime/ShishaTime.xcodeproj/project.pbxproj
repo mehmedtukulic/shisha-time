@@ -29,6 +29,7 @@
 		84C068532480539E008131FE /* BarsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C068522480539E008131FE /* BarsView.xib */; };
 		84C0685524805899008131FE /* BarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0685424805899008131FE /* BarDetailsViewController.swift */; };
 		84C06857248058C3008131FE /* BarDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C06856248058C3008131FE /* BarDetailsView.xib */; };
+		84E0A340248ED4CB0036C891 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0A33F248ED4CB0036C891 /* Bar.swift */; };
 		9C89C8A4E358BE4260DB87CA /* Pods_ShishaTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E754E8D5B4DF2BC895B126 /* Pods_ShishaTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		84C068522480539E008131FE /* BarsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarsView.xib; sourceTree = "<group>"; };
 		84C0685424805899008131FE /* BarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarDetailsViewController.swift; sourceTree = "<group>"; };
 		84C06856248058C3008131FE /* BarDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarDetailsView.xib; sourceTree = "<group>"; };
+		84E0A33F248ED4CB0036C891 /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		84391815247F19E100E098E7 /* ShishaTime */ = {
 			isa = PBXGroup;
 			children = (
+				84E0A33E248ED4A70036C891 /* Models */,
 				842D0673248BDFC400760FBB /* Managers */,
 				84C0684324804657008131FE /* Scenes */,
 				84C0684824804E38008131FE /* MainTabController.swift */,
@@ -208,6 +211,14 @@
 				84C06856248058C3008131FE /* BarDetailsView.xib */,
 			);
 			path = "Bar Details";
+			sourceTree = "<group>";
+		};
+		84E0A33E248ED4A70036C891 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84E0A33F248ED4CB0036C891 /* Bar.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		88C1A3F32BE3AEC65FD2A0F2 /* Frameworks */ = {
@@ -373,6 +384,7 @@
 				84C0684D24805364008131FE /* RewardsViewController.swift in Sources */,
 				84C0684F24805374008131FE /* BarsViewController.swift in Sources */,
 				8439182B247F1A4500E098E7 /* LoginViewController.swift in Sources */,
+				84E0A340248ED4CB0036C891 /* Bar.swift in Sources */,
 				842D0678248D7C8E00760FBB /* BarInformationCell.swift in Sources */,
 				84C0684924804E38008131FE /* MainTabController.swift in Sources */,
 				84C0685524805899008131FE /* BarDetailsViewController.swift in Sources */,
