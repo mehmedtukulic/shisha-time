@@ -20,7 +20,7 @@ class LoginViewController: UIViewController , GIDSignInDelegate{
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance().delegate = self
         // Automatically sign in the user.
-       // GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
 
         
     }
