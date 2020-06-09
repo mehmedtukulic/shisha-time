@@ -14,4 +14,8 @@ struct Bar : Decodable{
     var email_address : String?
     var web_address : String?
     var contact : String?
+    var lat : String?
+    var lng : String?
+    var bar_logo : String?
+    var bar_image : String?
 }

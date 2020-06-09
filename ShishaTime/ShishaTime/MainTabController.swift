@@ -41,7 +41,6 @@ class MainTabController: UITabBarController, UITabBarControllerDelegate{
     }
     
    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        print("klikno")
         if let vc = viewController as? UINavigationController {
             vc.popViewController(animated: true)
         }

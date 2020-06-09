@@ -20,9 +20,13 @@ class BarsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.topItem?.title = "Bars"
         setupTableView()
         getBars()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.navigationBar.topItem?.title = "Bars"
     }
     
     func setupTableView(){
@@ -52,11 +56,12 @@ class BarsViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.tableView?.reloadData()
                 
             } catch {
-                print("Error decoding Users  : \(error.localizedDescription)")
+                print("Error decoding Bars : \(error.localizedDescription)")
             }
             
         }
     }
+    
     
     // MARK: - Table view data source
     
@@ -81,13 +86,13 @@ class BarsViewController: UIViewController, UITableViewDelegate, UITableViewData
             let bar = Bars[indexPath.row]
             mycell.setup(bar: bar)
             return mycell
-            
+
         }
         return mycell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableView.deselectRow(at: indexPath, animated: true)
         let secondVC = BarDetailsViewController()
         secondVC.setup(bar: Bars[indexPath.row])
         self.navigationController?.pushViewController(secondVC, animated: true)

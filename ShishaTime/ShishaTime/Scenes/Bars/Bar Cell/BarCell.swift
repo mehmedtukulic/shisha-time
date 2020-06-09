@@ -19,7 +19,7 @@ class BarCell: UITableViewCell {
    // @IBOutlet weak var containerView: UIView!
     
     func setup(bar: Bar){
-        barImage.image = UIImage(named: "twitter")
+        setLogo(bar: bar)
         barTitle.text = bar.name
         barLocation.text = bar.location
       
@@ -27,7 +27,26 @@ class BarCell: UITableViewCell {
         barOpenStatus.layer.cornerRadius = 4
         barOpenStatus.layer.borderColor = UIColor.white.cgColor
         barOpenStatus.layer.borderWidth = 1
+        
+        
+        barImage.layer.cornerRadius = 20
+        barImage.layer.borderColor = UIColor.white.cgColor
+        barImage.layer.borderWidth = 1
+    }
     
+    
+    private func setLogo(bar: Bar){
+        DispatchQueue.global().async { [weak self] in
+            
+            guard let imageUrl = URL(string: (bar.bar_logo)!) else {return}
+            if let data = try? Data(contentsOf: imageUrl) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.barImage.image = image
+                    }
+                }
+            }
+        }
     }
     
     override func layoutSubviews() {
