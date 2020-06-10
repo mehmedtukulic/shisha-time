@@ -68,7 +68,8 @@ class BarDetailsViewController: UIViewController, UITableViewDelegate, UITableVi
         
         barLogo.layer.cornerRadius = barLogo.frame.size.width / 2
         barLogo.clipsToBounds = true
-        
+        barLogo.layer.borderColor = UIColor.white.cgColor
+        barLogo.layer.borderWidth = 1
         
         barOpenStatus.layer.cornerRadius = 4
         barOpenStatus.layer.borderColor = UIColor.white.cgColor

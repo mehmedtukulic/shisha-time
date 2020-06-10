@@ -95,6 +95,7 @@ class BarsViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.deselectRow(at: indexPath, animated: true)
         let secondVC = BarDetailsViewController()
         secondVC.setup(bar: Bars[indexPath.row])
+        secondVC.modalPresentationStyle = .overFullScreen
         self.navigationController?.pushViewController(secondVC, animated: true)
     }
     
