@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="ShishaTime" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="vTP-A7-64j" id="YK5-aA-LSI"/>
+                <outlet property="headerView" destination="LGf-oz-JGT" id="SH1-Du-jlW"/>
+                <outlet property="infoView" destination="ZNR-BZ-ZPn" id="jFy-bh-F7V"/>
+                <outlet property="userEmail" destination="Cqu-L1-lct" id="0gh-pe-3Yy"/>
+                <outlet property="userImage" destination="9yE-xz-fKm" id="Ltu-XT-5Cd"/>
+                <outlet property="view" destination="iN0-l3-epB" id="DRg-CN-rlR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTP-A7-64j">
+                    <rect key="frame" x="20" y="109" width="374" height="260"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mehmedtestira@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqu-L1-lct">
+                            <rect key="frame" x="82" y="216" width="210" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="260" id="2uh-bi-z3K"/>
+                        <constraint firstItem="Cqu-L1-lct" firstAttribute="centerX" secondItem="vTP-A7-64j" secondAttribute="centerX" id="NNG-zi-K7O"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon.stars" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9yE-xz-fKm">
+                    <rect key="frame" x="132" y="138" width="150" height="149.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="Zm2-14-AA4"/>
+                        <constraint firstAttribute="height" constant="150" id="meT-Xt-zcX"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mehmed Tukulic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IL-Z8-6oZ">
+                    <rect key="frame" x="137" y="299" width="140" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNR-BZ-ZPn">
+                    <rect key="frame" x="20" y="429.5" width="374" height="260"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="260" id="GeP-aY-zto"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informacije : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxp-MV-ZhE">
+                    <rect key="frame" x="20" y="389" width="106" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Dozvoljeno je koristiti samo jedan racun " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWc-ub-eGL">
+                    <rect key="frame" x="40" y="459.5" width="285.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.91980725526809692" green="0.3302998292853489" blue="0.32663327932919056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Izvuceni dobitnici dnevne nagrade ce biti kontaktirani na email" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mU-DB-gnL">
+                    <rect key="frame" x="40" y="485.5" width="354" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.42435336497288184" green="0.7693973183631897" blue="0.3903039129442768" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Za sva dodatna pitanja i informacije , kontaktirajte nas na :" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hP-UT-MQw">
+                    <rect key="frame" x="40" y="541.5" width="354" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="shisha_time@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9O-S0-Hfd">
+                    <rect key="frame" x="110.5" y="607.5" width="193" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.063860617580000001" green="0.10055080800000001" blue="0.1647133529" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGf-oz-JGT" customClass="EliHeaderView" customModule="ShishaTime" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="45"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="yYr-vS-8EU"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="3tW-Ck-o0S"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.99731705250000002" green="1" blue="0.98290012110000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="LGf-oz-JGT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="45a-yj-AZh"/>
+                <constraint firstItem="Wxp-MV-ZhE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="6sD-Un-7o7"/>
+                <constraint firstItem="LGf-oz-JGT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="92H-DB-Bg9"/>
+                <constraint firstItem="Z9O-S0-Hfd" firstAttribute="top" secondItem="3hP-UT-MQw" secondAttribute="bottom" constant="30" id="A6j-Bq-Noa"/>
+                <constraint firstItem="vTP-A7-64j" firstAttribute="top" secondItem="LGf-oz-JGT" secondAttribute="bottom" constant="20" id="EKj-Zf-GOO"/>
+                <constraint firstItem="3hP-UT-MQw" firstAttribute="leading" secondItem="ZNR-BZ-ZPn" secondAttribute="leading" constant="20" id="FCT-0R-WBD"/>
+                <constraint firstItem="6IL-Z8-6oZ" firstAttribute="centerX" secondItem="9yE-xz-fKm" secondAttribute="centerX" id="IGk-iv-UWl"/>
+                <constraint firstItem="ZNR-BZ-ZPn" firstAttribute="top" secondItem="Wxp-MV-ZhE" secondAttribute="bottom" constant="20" id="Nhw-Wq-TaE"/>
+                <constraint firstItem="9yE-xz-fKm" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="T9Z-pQ-F7E"/>
+                <constraint firstItem="dWc-ub-eGL" firstAttribute="leading" secondItem="ZNR-BZ-ZPn" secondAttribute="leading" constant="20" id="Tm3-Jb-1wk"/>
+                <constraint firstItem="Wxp-MV-ZhE" firstAttribute="top" secondItem="vTP-A7-64j" secondAttribute="bottom" constant="20" id="UDz-Tz-68z"/>
+                <constraint firstItem="6IL-Z8-6oZ" firstAttribute="top" secondItem="9yE-xz-fKm" secondAttribute="bottom" constant="10" id="ZgE-eu-HJp"/>
+                <constraint firstItem="dWc-ub-eGL" firstAttribute="top" secondItem="ZNR-BZ-ZPn" secondAttribute="top" constant="30" id="emc-XB-w5Z"/>
+                <constraint firstItem="ZNR-BZ-ZPn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="i9x-NQ-XUG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZNR-BZ-ZPn" secondAttribute="trailing" constant="20" id="iUj-Db-iuf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LGf-oz-JGT" secondAttribute="trailing" id="jHK-bC-cl4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3hP-UT-MQw" secondAttribute="trailing" constant="20" id="jr4-RP-fi7"/>
+                <constraint firstItem="3hP-UT-MQw" firstAttribute="top" secondItem="1mU-DB-gnL" secondAttribute="bottom" constant="20" id="mh0-Ua-CeH"/>
+                <constraint firstItem="Cqu-L1-lct" firstAttribute="top" secondItem="6IL-Z8-6oZ" secondAttribute="bottom" constant="3" id="ooe-dx-2bL"/>
+                <constraint firstItem="Z9O-S0-Hfd" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="rIh-QM-HFW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1mU-DB-gnL" secondAttribute="trailing" constant="20" id="tYU-GE-RvL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vTP-A7-64j" secondAttribute="trailing" constant="20" id="uE0-uq-veP"/>
+                <constraint firstItem="9yE-xz-fKm" firstAttribute="top" secondItem="vTP-A7-64j" secondAttribute="top" constant="30" id="vac-Yy-S3X"/>
+                <constraint firstItem="1mU-DB-gnL" firstAttribute="leading" secondItem="ZNR-BZ-ZPn" secondAttribute="leading" constant="20" id="vzN-Xp-UCw"/>
+                <constraint firstItem="vTP-A7-64j" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="zPx-b3-3NN"/>
+                <constraint firstItem="1mU-DB-gnL" firstAttribute="top" secondItem="dWc-ub-eGL" secondAttribute="bottom" constant="8" id="zmb-Gh-7V1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="moon.stars" catalog="system" width="128" height="124"/>
+    </resources>
+</document>

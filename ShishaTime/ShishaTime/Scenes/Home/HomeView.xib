@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ShishaTime" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="RKN-cG-jtb" id="OVf-tX-ucG"/>
+                <outlet property="headerView" destination="nzx-OW-5hA" id="kpG-M3-tez"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Nil-jT-rBL"/>
             </connections>
         </placeholder>
@@ -19,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RKN-cG-jtb">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <rect key="frame" x="0.0" y="45" width="320" height="523"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Iaq-do-MOY">
                         <size key="itemSize" width="390" height="794"/>
@@ -28,16 +29,30 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzx-OW-5hA" customClass="EliHeaderView" customModule="Elipay" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="xRy-Em-Ql2"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="eHW-Kl-ICn"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Wallet"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RKN-cG-jtb" secondAttribute="trailing" id="3oN-Zx-vJ1"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RKN-cG-jtb" secondAttribute="bottom" id="68l-uf-PLW"/>
-                <constraint firstItem="RKN-cG-jtb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="EIt-ho-BtJ"/>
+                <constraint firstItem="RKN-cG-jtb" firstAttribute="top" secondItem="nzx-OW-5hA" secondAttribute="bottom" id="EIt-ho-BtJ"/>
+                <constraint firstItem="nzx-OW-5hA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IXy-hh-HSZ"/>
+                <constraint firstItem="nzx-OW-5hA" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Inf-Oh-EZi"/>
+                <constraint firstItem="nzx-OW-5hA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XUw-Qv-SRG"/>
                 <constraint firstItem="RKN-cG-jtb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zGa-vD-V9y"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="139" y="104"/>
+            <point key="canvasLocation" x="138.75" y="103.52112676056338"/>
         </view>
     </objects>
 </document>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Q7A-UU-0zp" customClass="RewardCell" customModule="ShishaTime" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q7A-UU-0zp" id="ZjA-jf-FHD">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="866-Dh-jVc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fade" translatesAutoresizingMaskIntoConstraints="NO" id="I8v-Ql-NG3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shisha Bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSk-Zh-BjC">
+                                <rect key="frame" x="8" y="14" width="87.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shishalogo" translatesAutoresizingMaskIntoConstraints="NO" id="RdZ-Tt-hBa">
+                                <rect key="frame" x="-27" y="0.0" width="577" height="150"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAHALA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLC-FZ-YTh">
+                                <rect key="frame" x="105.5" y="14" width="74.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.078856669369999993" green="0.73731738329999996" blue="0.92551738019999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEE-XM-fYT">
+                                <rect key="frame" x="8" y="43" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.078856669369999993" green="0.73731738329999996" blue="0.92551738019999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXE-TC-vyL">
+                                <rect key="frame" x="9" y="102" width="180" height="34"/>
+                                <color key="backgroundColor" red="0.078856669369999993" green="0.73731738329999996" blue="0.92551738019999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3Dj-Gh-xoF"/>
+                                    <constraint firstAttribute="width" constant="180" id="h3p-Yc-rnu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="ENTER"/>
+                                <connections>
+                                    <action selector="enterButtonTapped:" destination="Q7A-UU-0zp" eventType="touchUpInside" id="xQD-pL-P2U"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refresh to see the winner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnX-4x-nHJ">
+                                <rect key="frame" x="30" y="64.5" width="208.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RdZ-Tt-hBa" secondAttribute="trailing" constant="-230" id="5hn-lY-HB8"/>
+                            <constraint firstItem="OLC-FZ-YTh" firstAttribute="leading" secondItem="aSk-Zh-BjC" secondAttribute="trailing" constant="10" id="8pg-tg-1N3"/>
+                            <constraint firstItem="WnX-4x-nHJ" firstAttribute="centerY" secondItem="866-Dh-jVc" secondAttribute="centerY" id="9tv-ZQ-Vqa"/>
+                            <constraint firstAttribute="bottom" secondItem="RdZ-Tt-hBa" secondAttribute="bottom" id="B3l-9b-wvP"/>
+                            <constraint firstItem="RdZ-Tt-hBa" firstAttribute="top" secondItem="866-Dh-jVc" secondAttribute="top" id="E92-FI-1lr"/>
+                            <constraint firstItem="hEE-XM-fYT" firstAttribute="top" secondItem="aSk-Zh-BjC" secondAttribute="bottom" constant="8" id="NbQ-HM-dgq"/>
+                            <constraint firstItem="hEE-XM-fYT" firstAttribute="leading" secondItem="866-Dh-jVc" secondAttribute="leading" constant="8" id="OTE-MT-rOA"/>
+                            <constraint firstAttribute="bottom" secondItem="iXE-TC-vyL" secondAttribute="bottom" constant="14" id="Qmt-GQ-BEZ"/>
+                            <constraint firstItem="aSk-Zh-BjC" firstAttribute="leading" secondItem="866-Dh-jVc" secondAttribute="leading" constant="8" id="dXe-Yv-aXF"/>
+                            <constraint firstItem="WnX-4x-nHJ" firstAttribute="leading" secondItem="866-Dh-jVc" secondAttribute="leading" constant="30" id="jZx-DA-4PI"/>
+                            <constraint firstItem="iXE-TC-vyL" firstAttribute="leading" secondItem="866-Dh-jVc" secondAttribute="leading" constant="9" id="kw3-Xf-r3I"/>
+                            <constraint firstItem="aSk-Zh-BjC" firstAttribute="top" secondItem="866-Dh-jVc" secondAttribute="top" constant="14" id="rrV-Tr-GHS"/>
+                            <constraint firstItem="OLC-FZ-YTh" firstAttribute="centerY" secondItem="aSk-Zh-BjC" secondAttribute="centerY" id="yI3-ud-9l2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="I8v-Ql-NG3" secondAttribute="trailing" id="23l-Ay-IeM"/>
+                    <constraint firstAttribute="bottom" secondItem="866-Dh-jVc" secondAttribute="bottom" id="GS9-ns-an7"/>
+                    <constraint firstAttribute="trailing" secondItem="866-Dh-jVc" secondAttribute="trailing" id="Q7o-SZ-vVl"/>
+                    <constraint firstItem="866-Dh-jVc" firstAttribute="leading" secondItem="ZjA-jf-FHD" secondAttribute="leading" id="U1T-gX-SEW"/>
+                    <constraint firstAttribute="bottom" secondItem="I8v-Ql-NG3" secondAttribute="bottom" id="UEt-hD-gzY"/>
+                    <constraint firstItem="866-Dh-jVc" firstAttribute="top" secondItem="ZjA-jf-FHD" secondAttribute="top" id="YAs-3q-fQm"/>
+                    <constraint firstItem="I8v-Ql-NG3" firstAttribute="leading" secondItem="ZjA-jf-FHD" secondAttribute="leading" id="cYw-qh-ZAR"/>
+                    <constraint firstItem="I8v-Ql-NG3" firstAttribute="top" secondItem="ZjA-jf-FHD" secondAttribute="top" id="nhY-1r-pM4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="zcN-wB-fcR"/>
+            <connections>
+                <outlet property="barLabel" destination="OLC-FZ-YTh" id="sdr-8l-Oh6"/>
+                <outlet property="bgView" destination="866-Dh-jVc" id="M2f-bh-2hI"/>
+                <outlet property="enterButton" destination="iXE-TC-vyL" id="XN7-bP-cWp"/>
+                <outlet property="fade" destination="I8v-Ql-NG3" id="1Ks-Yt-WN1"/>
+                <outlet property="usersCount" destination="hEE-XM-fYT" id="4ZR-ha-2Yr"/>
+                <outlet property="winnerLabel" destination="WnX-4x-nHJ" id="gAf-or-h29"/>
+            </connections>
+            <point key="canvasLocation" x="-71.014492753623188" y="101.78571428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fade" width="1000" height="563"/>
+        <image name="shishalogo" width="577" height="433"/>
+    </resources>
+</document>

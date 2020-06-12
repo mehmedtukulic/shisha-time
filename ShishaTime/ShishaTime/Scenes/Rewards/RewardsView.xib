@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RewardsViewController" customModule="ShishaTime" customModuleProvider="target">
             <connections>
+                <outlet property="headerView" destination="79F-sI-WvF" id="Ssr-Jb-37x"/>
+                <outlet property="tableView" destination="Xy2-fJ-dWv" id="984-zw-3fD"/>
                 <outlet property="view" destination="iN0-l3-epB" id="45h-3W-aqU"/>
             </connections>
         </placeholder>
@@ -16,7 +18,34 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xy2-fJ-dWv">
+                    <rect key="frame" x="0.0" y="89" width="414" height="773"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79F-sI-WvF" customClass="EliHeaderView" customModule="Elipay" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="45"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Pjt-Xt-iPj"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="RyY-LO-chv"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Wallet"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Xy2-fJ-dWv" secondAttribute="trailing" id="8Ne-fu-hYy"/>
+                <constraint firstItem="79F-sI-WvF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9bK-Bf-XA8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="79F-sI-WvF" secondAttribute="trailing" id="Lhz-EP-bLX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Xy2-fJ-dWv" secondAttribute="bottom" id="XHD-Gr-Tqw"/>
+                <constraint firstItem="Xy2-fJ-dWv" firstAttribute="top" secondItem="79F-sI-WvF" secondAttribute="bottom" id="a2b-sx-pub"/>
+                <constraint firstItem="79F-sI-WvF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="chx-nd-kXb"/>
+                <constraint firstItem="Xy2-fJ-dWv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pbF-WH-5fi"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="139" y="104"/>
         </view>

@@ -16,6 +16,7 @@ class BarsViewController: UIViewController, UITableViewDelegate, UITableViewData
     var Bars = [Bar]()
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var headerView: EliHeaderView!
     
     
     override func viewDidLoad() {
@@ -26,7 +27,10 @@ class BarsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        self.navigationController?.navigationBar.topItem?.title = "Bars"
+        self.navigationController?.navigationBar.isHidden = true
+        self.headerView.title = "Bars"
+        self.headerView.setCenteredTitle()
+        self.headerView.backgroundColor = .white
     }
     
     func setupTableView(){

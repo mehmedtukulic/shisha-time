@@ -14,6 +14,7 @@ import Alamofire
 class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var headerView: EliHeaderView!
     
     private var scrollingTimer: Timer? = nil
     var imagesArray : [String]?
@@ -22,7 +23,11 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewDidLoad() {
         self.navigationController?.navigationBar.isHidden = true
+        self.headerView.title = "Home"
+        self.headerView.setCenteredTitle()
+
         GIDSignIn.sharedInstance()?.presentingViewController = self
+        
         getAdds()
         setupCollectionView()
         scrollingTimer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: (#selector(startTimer)), userInfo: nil, repeats: true)
@@ -58,8 +63,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func getBar(barName: String){
-        //Fetching and Decoding JSON
-       // https://jsonplaceholder.typicode.com/users
         let url = "https://shisha-time.herokuapp.com/public/bar/\(barName)"
         AF.request(url).responseJSON { (response) in
             let data = response.data

@@ -34,17 +34,17 @@
                                     <constraint firstAttribute="width" constant="8" id="Rmm-HZ-6u6"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="NQK-ab-8e6">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NQK-ab-8e6">
                                 <rect key="frame" x="70" y="19" width="37.5" height="32.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1K-YA-Lhz">
-                                        <rect key="frame" x="0.0" y="0.0" width="37.5" height="18"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="37.5" height="13.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35r-qM-Nsd">
-                                        <rect key="frame" x="0.0" y="18" width="37.5" height="14.5"/>
+                                        <rect key="frame" x="0.0" y="23.5" width="37.5" height="9"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.73333333329999995" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>

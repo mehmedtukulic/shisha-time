@@ -20,14 +20,21 @@ class MainTabController: UITabBarController, UITabBarControllerDelegate{
     func setupTabBar(){
         let homeVC = UINavigationController(rootViewController: HomeViewController())
         homeVC.tabBarItem.image = UIImage(named: "homeIcon")
+        homeVC.tabBarItem.title = "Home"
         
         let rewardsVC = UINavigationController(rootViewController: RewardsViewController())
         rewardsVC.tabBarItem.image = UIImage(named: "rewardsIcon")
-        
+        rewardsVC.tabBarItem.title = "Rewards"
+
         let barsVC = UINavigationController(rootViewController: BarsViewController())
         barsVC.tabBarItem.image = UIImage(named: "spotsIcon")
-        
-        viewControllers = [homeVC, rewardsVC , barsVC]
+        barsVC.tabBarItem.title = "Bars"
+
+        let settingsVC = UINavigationController(rootViewController: SettingsViewController())
+        settingsVC.tabBarItem.image = UIImage(named: "settingsIcon")
+        settingsVC.tabBarItem.title = "Settings"
+
+        viewControllers = [homeVC, rewardsVC, barsVC, settingsVC]
         
         guard let items = tabBar.items else {return}
         

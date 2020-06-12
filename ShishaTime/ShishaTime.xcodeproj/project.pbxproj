@@ -22,6 +22,12 @@
 		8466BF0124916B5B009DFC22 /* MarketingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466BF0024916B5B009DFC22 /* MarketingCell.swift */; };
 		8466BF0324916B8D009DFC22 /* MarketingCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8466BF0224916B8D009DFC22 /* MarketingCellView.xib */; };
 		8466BF052491798E009DFC22 /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466BF042491798E009DFC22 /* Add.swift */; };
+		8466BF072492821A009DFC22 /* Giveaway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466BF062492821A009DFC22 /* Giveaway.swift */; };
+		8466BF0A2492A109009DFC22 /* RewardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466BF092492A109009DFC22 /* RewardCell.swift */; };
+		8466BF0C2492A14B009DFC22 /* RewardCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8466BF0B2492A14B009DFC22 /* RewardCellView.xib */; };
+		8466BF0F2492DE51009DFC22 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466BF0E2492DE51009DFC22 /* SettingsViewController.swift */; };
+		8466BF112492DE84009DFC22 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8466BF102492DE83009DFC22 /* SettingsView.xib */; };
+		8466BF142492E134009DFC22 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466BF132492E134009DFC22 /* CustomHeaderView.swift */; };
 		84C0683E24802393008131FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C0683D24802393008131FE /* Main.storyboard */; };
 		84C0684024802658008131FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0683F24802658008131FE /* HomeViewController.swift */; };
 		84C0684224802682008131FE /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C0684124802682008131FE /* HomeView.xib */; };
@@ -57,6 +63,12 @@
 		8466BF0024916B5B009DFC22 /* MarketingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingCell.swift; sourceTree = "<group>"; };
 		8466BF0224916B8D009DFC22 /* MarketingCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketingCellView.xib; sourceTree = "<group>"; };
 		8466BF042491798E009DFC22 /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
+		8466BF062492821A009DFC22 /* Giveaway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giveaway.swift; sourceTree = "<group>"; };
+		8466BF092492A109009DFC22 /* RewardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCell.swift; sourceTree = "<group>"; };
+		8466BF0B2492A14B009DFC22 /* RewardCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardCellView.xib; sourceTree = "<group>"; };
+		8466BF0E2492DE51009DFC22 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8466BF102492DE83009DFC22 /* SettingsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
+		8466BF132492E134009DFC22 /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
 		84C0683D24802393008131FE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84C0683F24802658008131FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		84C0684124802682008131FE /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
@@ -129,6 +141,7 @@
 		84391815247F19E100E098E7 /* ShishaTime */ = {
 			isa = PBXGroup;
 			children = (
+				8466BF122492E11E009DFC22 /* Customs */,
 				84E0A33E248ED4A70036C891 /* Models */,
 				842D0673248BDFC400760FBB /* Managers */,
 				84C0684324804657008131FE /* Scenes */,
@@ -150,6 +163,32 @@
 			path = MarketingCell;
 			sourceTree = "<group>";
 		};
+		8466BF082492A0E6009DFC22 /* RewardCell */ = {
+			isa = PBXGroup;
+			children = (
+				8466BF092492A109009DFC22 /* RewardCell.swift */,
+				8466BF0B2492A14B009DFC22 /* RewardCellView.xib */,
+			);
+			path = RewardCell;
+			sourceTree = "<group>";
+		};
+		8466BF0D2492DE15009DFC22 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8466BF0E2492DE51009DFC22 /* SettingsViewController.swift */,
+				8466BF102492DE83009DFC22 /* SettingsView.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8466BF122492E11E009DFC22 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				8466BF132492E134009DFC22 /* CustomHeaderView.swift */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
 		84C0684324804657008131FE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +197,7 @@
 				84C06847248046CA008131FE /* Home */,
 				84C0684A2480531F008131FE /* Rewards */,
 				84C0684B2480532B008131FE /* Bars */,
+				8466BF0D2492DE15009DFC22 /* Settings */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -202,6 +242,7 @@
 		84C0684A2480531F008131FE /* Rewards */ = {
 			isa = PBXGroup;
 			children = (
+				8466BF082492A0E6009DFC22 /* RewardCell */,
 				84C0684C24805364008131FE /* RewardsViewController.swift */,
 				84C0685024805387008131FE /* RewardsView.xib */,
 			);
@@ -211,7 +252,6 @@
 		84C0684B2480532B008131FE /* Bars */ = {
 			isa = PBXGroup;
 			children = (
-				842D0676248D7C7200760FBB /* Bar Information Cell */,
 				8412B2E02484455700EB3250 /* Bar Cell */,
 				84C068582481830F008131FE /* Bar Details */,
 				84C0684E24805374008131FE /* BarsViewController.swift */,
@@ -223,6 +263,7 @@
 		84C068582481830F008131FE /* Bar Details */ = {
 			isa = PBXGroup;
 			children = (
+				842D0676248D7C7200760FBB /* Bar Information Cell */,
 				84C0685424805899008131FE /* BarDetailsViewController.swift */,
 				84C06856248058C3008131FE /* BarDetailsView.xib */,
 			);
@@ -234,6 +275,7 @@
 			children = (
 				84E0A33F248ED4CB0036C891 /* Bar.swift */,
 				8466BF042491798E009DFC22 /* Add.swift */,
+				8466BF062492821A009DFC22 /* Giveaway.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -319,6 +361,8 @@
 				84391823247F19E200E098E7 /* LaunchScreen.storyboard in Resources */,
 				8466BF0324916B8D009DFC22 /* MarketingCellView.xib in Resources */,
 				8412B2E4248445AD00EB3250 /* BarCellView.xib in Resources */,
+				8466BF0C2492A14B009DFC22 /* RewardCellView.xib in Resources */,
+				8466BF112492DE84009DFC22 /* SettingsView.xib in Resources */,
 				84C06857248058C3008131FE /* BarDetailsView.xib in Resources */,
 				84C068532480539E008131FE /* BarsView.xib in Resources */,
 				84C0685124805387008131FE /* RewardsView.xib in Resources */,
@@ -400,17 +444,21 @@
 				8412B2E22484457100EB3250 /* BarCell.swift in Sources */,
 				842D0675248BDFDE00760FBB /* GoogleSignInManager.swift in Sources */,
 				8466BF052491798E009DFC22 /* Add.swift in Sources */,
+				8466BF142492E134009DFC22 /* CustomHeaderView.swift in Sources */,
 				84C0684D24805364008131FE /* RewardsViewController.swift in Sources */,
 				84C0684F24805374008131FE /* BarsViewController.swift in Sources */,
+				8466BF072492821A009DFC22 /* Giveaway.swift in Sources */,
 				8439182B247F1A4500E098E7 /* LoginViewController.swift in Sources */,
 				84E0A340248ED4CB0036C891 /* Bar.swift in Sources */,
 				842D0678248D7C8E00760FBB /* BarInformationCell.swift in Sources */,
 				8466BF0124916B5B009DFC22 /* MarketingCell.swift in Sources */,
 				84C0684924804E38008131FE /* MainTabController.swift in Sources */,
 				84C0685524805899008131FE /* BarDetailsViewController.swift in Sources */,
+				8466BF0A2492A109009DFC22 /* RewardCell.swift in Sources */,
 				8439181B247F19E100E098E7 /* ViewController.swift in Sources */,
 				84391817247F19E100E098E7 /* AppDelegate.swift in Sources */,
 				84391819247F19E100E098E7 /* SceneDelegate.swift in Sources */,
+				8466BF0F2492DE51009DFC22 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +598,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RHNV3HY5FU;
 				INFOPLIST_FILE = ShishaTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -569,6 +618,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RHNV3HY5FU;
 				INFOPLIST_FILE = ShishaTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

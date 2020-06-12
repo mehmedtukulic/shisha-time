@@ -27,8 +27,6 @@ class MarketingCell: UICollectionViewCell {
                 if let image = UIImage(data: data) {
                     DispatchQueue.main.async {
                         self?.image.image = image
-                        self?.image.contentMode = .scaleToFill
-                        
                     }
                 }
             }
