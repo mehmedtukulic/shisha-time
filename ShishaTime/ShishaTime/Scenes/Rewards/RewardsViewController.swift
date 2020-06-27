@@ -28,7 +28,7 @@ class RewardsViewController: UIViewController, UITableViewDelegate, UITableViewD
         setupTableView()
         
         let day = Date().dayNumberOfWeek()
-        setDayName(day: day!)
+        setDayName(day: day! - 1)
         
     }
     

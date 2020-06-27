@@ -57,7 +57,7 @@
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refresh to see the winner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnX-4x-nHJ">
-                                <rect key="frame" x="30" y="64.5" width="208.5" height="21"/>
+                                <rect key="frame" x="8" y="64.5" width="208.5" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -74,7 +74,7 @@
                             <constraint firstItem="hEE-XM-fYT" firstAttribute="leading" secondItem="866-Dh-jVc" secondAttribute="leading" constant="8" id="OTE-MT-rOA"/>
                             <constraint firstAttribute="bottom" secondItem="iXE-TC-vyL" secondAttribute="bottom" constant="14" id="Qmt-GQ-BEZ"/>
                             <constraint firstItem="aSk-Zh-BjC" firstAttribute="leading" secondItem="866-Dh-jVc" secondAttribute="leading" constant="8" id="dXe-Yv-aXF"/>
-                            <constraint firstItem="WnX-4x-nHJ" firstAttribute="leading" secondItem="866-Dh-jVc" secondAttribute="leading" constant="30" id="jZx-DA-4PI"/>
+                            <constraint firstItem="WnX-4x-nHJ" firstAttribute="leading" secondItem="866-Dh-jVc" secondAttribute="leading" constant="8" id="jZx-DA-4PI"/>
                             <constraint firstItem="iXE-TC-vyL" firstAttribute="leading" secondItem="866-Dh-jVc" secondAttribute="leading" constant="9" id="kw3-Xf-r3I"/>
                             <constraint firstItem="aSk-Zh-BjC" firstAttribute="top" secondItem="866-Dh-jVc" secondAttribute="top" constant="14" id="rrV-Tr-GHS"/>
                             <constraint firstItem="OLC-FZ-YTh" firstAttribute="centerY" secondItem="aSk-Zh-BjC" secondAttribute="centerY" id="yI3-ud-9l2"/>
